@@ -1,0 +1,110 @@
+html {
+    font-family: var(--font-family);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+    padding: 1em;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    margin-bottom: 2.4em;
+}
+
+header img {
+    width: 3.5em;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-weight: 300;
+    color: var(--neutral-1);
+    font-size: 1.4em;
+    margin-bottom: 0.8em;
+}
+
+main h1 strong {
+    color: black;
+}
+
+main h2 {
+    font-weight: 300;
+    font-size: 0.75em;
+    margin-bottom: 2.6em;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+form input,
+form button {
+    border-radius: 25px;
+    padding: 0.7em 2em;
+    font-size: 0.8em;
+    width: 88%;
+}
+
+form input {
+    border: 1px solid var(--neutral-1);
+}
+form p {
+    display: none;
+    position: absolute;
+    bottom: 65%;
+    left: 22%;
+    color: var(--secondary-2);
+    font-size: 0.7em;
+}
+
+form button {
+    color: #fff;
+    background-color: var(--primary);
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    margin-bottom: 3.5em;
+    transition: 0.2s ease;
+}
+
+main img {
+    margin-bottom: 5em;
+}
+
+footer i {
+    color: var(--primary);
+    padding: 0.6em;
+    border: 1px solid var(--secondary-1);
+    border-radius: 50%;
+}
+
+footer p {
+    font-size: 0.7em;
+    color: var(--neutral-1);
+}
+
+/*Errors*/
+
+form input.error {
+    border: 1px solid var(--secondary-2);
+    margin-bottom: 3em;
+}
+
+form p.error {
+    display: block;
+
+}
